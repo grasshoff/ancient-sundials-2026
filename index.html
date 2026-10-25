@@ -13,8 +13,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,460;0,9..144,560;1,9..144,460&family=Source+Sans+3:ital,wght@0,400;0,560;0,650;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,560;1,8..60,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/landing.css?v=20260930125332">
-  <link rel="stylesheet" href="assets/sundial.css?v=20260930125332">
+  <link rel="stylesheet" href="assets/landing.css?v=20261025010048">
+  <link rel="stylesheet" href="assets/sundial.css?v=20261025010048">
+<!-- famulus:publisher:start -->
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="publisher" content="OpenScienceTechnology GmbH">
+<meta name="DC.publisher" content="OpenScienceTechnology GmbH">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://famulus.lettre.ai/sundials/", "publisher": {"@type": "Organization", "name": "OpenScienceTechnology GmbH", "address": {"@type": "PostalAddress", "streetAddress": "Im Wiesengrund 15A", "addressLocality": "47198 Duisburg", "addressCountry": "Deutschland"}}}</script>
+<!-- famulus:publisher:end -->
 </head>
 <body>
   <a class="skip" href="#inhalt">Skip to content</a>
@@ -44,6 +50,12 @@
         <p class="credit">The 3D models belong to the Edition Topoi of the Berlin Sundial Collaboration; the licence is stated per object in the catalogue. The rights of the digitised literature are not cleared; this page shows excerpts only.</p>
         <div class="hero-stage"><div class="fig" data-chart="sd_hero"></div></div>
         <div class="figures" style="--cols:6" aria-label="The holdings in numbers"><div><span class="v">782</span><span class="k">dialface entries</span></div><div><span class="v">113</span><span class="k">measured and graded</span></div><div><span class="v">72</span><span class="k">design latitudes determined</span></div><div><span class="v">984</span><span class="k">hour lines detected</span></div><div><span class="v">243</span><span class="k">day lines detected</span></div><div><span class="v">7</span><span class="k">works in the literature</span></div></div>
+        <form class="ask" action="https://lettre.ngrok.dev/sundials-literature/" method="get" target="_blank" rel="noopener" aria-label="Ask the edition a question">
+          <label for="ask-sonnenuhren">Ask the edition a question</label>
+          <div class="ask-row"><input id="ask-sonnenuhren" name="anfrage" type="text" required minlength="3" placeholder="e.g. Which main topics do the volumes treat per decade?" autocomplete="off">
+          <input type="hidden" name="bedeutung" value="1"><button type="submit">Ask</button></div>
+          <p class="ask-hint">Famulus reads the question, determines the evidence space and answers with references – in the viewer&#x27;s “Anfrage” column.</p>
+        </form>
       </section>
 
       <section class="portals" aria-label="Ways in">
@@ -76,7 +88,7 @@
 <p class="mark">Methodological approach</p>
 <h2><span>Famulus</span></h2>
 <div class="method-cols"><p>Every number on this page is read from the register, the PDAI collection or the papers when the page is built. If a source is missing, the build stops.</p><p>The register judges only what was measured. A fragment is not downgraded because parts are missing; the grade drops only for defects of the measurement itself. This page follows that rule.</p></div>
-<p class="go-row"><a class="go" href="https://famulus.lettre.ai/kepleriana/famulus/famulus-plattform.html" target="_blank" rel="noopener">Read about Famulus</a></p>
+<p class="go-row"><a class="go" href="https://lettre.ngrok.dev/famulus/" target="_blank" rel="noopener">Read about Famulus</a></p>
 </article>
       </section>
 
@@ -104,17 +116,22 @@
   <footer>
     <div class="wrap">
       <div><p>Ancient Sundials</p><p>Gerd Graßhoff, Humboldt-Universität zu Berlin, Forschungsinstitut des Deutschen Museums</p></div>
-      <div><p><a href="data/manifest.json">Data manifest</a> · As of 30 September 2026</p></div>
+      <div><p><a href="data/manifest.json">Data manifest</a> · As of 25 October 2026</p></div>
     </div>
     <div class="wrap"></div>
   </footer>
 
-  <script src="assets/vendor/d3.v7.min.js?v=20260930125332"></script>
-  <script src="assets/vendor/topojson-client.min.js?v=20260930125332"></script>
-  <script src="assets/vendor/world-110m.js?v=20260930125332"></script>
-  <script src="data/bundle.js?v=20260930125332"></script>
-  <script src="assets/js/charts.js?v=20260930125332"></script>
-  <script src="assets/js/sundial.js?v=20260930125332"></script>
-  <script src="assets/js/scrolly.js?v=20260930125332"></script>
+  <script src="assets/vendor/d3.v7.min.js?v=20261025010048"></script>
+  <script src="assets/vendor/topojson-client.min.js?v=20261025010048"></script>
+  <script src="assets/vendor/world-110m.js?v=20261025010048"></script>
+  <script src="data/bundle.js?v=20261025010048"></script>
+  <script src="assets/js/charts.js?v=20261025010048"></script>
+  <script src="assets/js/sundial.js?v=20261025010048"></script>
+  <script src="assets/js/scrolly.js?v=20261025010048"></script>
+<!-- famulus:publisher:start -->
+<p class="famulus-publisher" style="max-width:46rem;margin:2.5rem auto 1.5rem;padding:.7rem 16px 0;border-top:2px solid #c8a22a;font:13px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;opacity:.8">Published by OpenScienceTechnology GmbH · <a href="/impressum/">Legal notice</a> · <a href="/datenschutz/">Privacy</a></p>
+<script>(function(){try{var d=JSON.stringify({u:location.pathname,r:document.referrer,m:""});navigator.sendBeacon?navigator.sendBeacon("https://lettre.ngrok.dev/famulus-counter/api/hit",d):fetch("https://lettre.ngrok.dev/famulus-counter/api/hit",{method:'POST',body:d,keepalive:true,mode:'no-cors'})}catch(e){}})();</script>
+<noscript><img src="https://lettre.ngrok.dev/famulus-counter/api/hit.gif?u=/sundials/&amp;m=" width="1" height="1" alt=""></noscript>
+<!-- famulus:publisher:end -->
 </body>
 </html>
