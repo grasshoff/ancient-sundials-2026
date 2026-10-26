@@ -2,15 +2,15 @@
  "slug": "sonnenuhren",
  "facts": {
   "repo_base": {
-   "value": "https://lettre.ngrok.dev/sundials/",
-   "source": "SUNDIALS_REPO_BASE (default: lettre.ngrok.dev/sundials/)"
+   "value": "https://famulus.lettre.ai/live/sundials/",
+   "source": "SUNDIALS_REPO_BASE (default: the site gateway, famulus.lettre.ai/live/sundials/)"
   },
   "lit_base": {
-   "value": "https://lettre.ngrok.dev/sundials-literature/",
+   "value": "https://famulus.lettre.ai/live/sundials-literature/",
    "source": "SUNDIALS_LIT_BASE"
   },
   "anim_base": {
-   "value": "https://lettre.ngrok.dev/ancient-sundial/",
+   "value": "https://famulus.lettre.ai/live/ancient-sundial/",
    "source": "SUNDIALS_ANIM_BASE"
   },
   "sd_catalogue": {
